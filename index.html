@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدونة عصرية - تجربة تفاعلية مذهلة</title>
+    <meta
+      name="description"
+      content="مدونة عصرية بتصميم تفاعلي مبهر وتجربة مستخدم استثنائية"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <h2><i class="fas fa-blog"></i> مدونة عصرية</h2>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link active">الرئيسية</a>
+          <a href="posts.html" class="nav-link">المقالات</a>
+          <a href="about.html" class="nav-link">حول</a>
+          <a href="contact.html" class="nav-link">اتصل بنا</a>
+          <a href="signin.html" class="nav-link">تسجيل الدخول</a>
+        </div>
+        <div class="nav-actions">
+          <button class="search-btn" id="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">مدونة تقنية حديثة</h1>
+          <p class="hero-subtitle">
+            اكتشف أحدث التطورات في عالم التكنولوجيا والبرمجة والتصميم مع محتوى
+            عربي عالي الجودة
+          </p>
+
+          <div class="hero-cta">
+            <a href="#latest-posts" class="cta-button cta-primary">
+              <i class="fas fa-rocket"></i>
+              استكشف المقالات
+            </a>
+            <a href="about.html" class="cta-button cta-secondary">
+              <i class="fas fa-info-circle"></i>
+              تعرف علينا
+            </a>
+          </div>
+
+          <div class="hero-features">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="feature-title">برمجة حديثة</h3>
+              <p class="feature-description">
+                تعلم أحدث تقنيات البرمجة والتطوير مع أمثلة عملية
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3 class="feature-title">تصميم إبداعي</h3>
+              <p class="feature-description">
+                اكتشف أسرار التصميم الحديث وتجربة المستخدم
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 class="feature-title">انظمة SaaS</h3>
+              <p class="feature-description">
+                بناء حلول SaaS مبتكرة لتلبية احتياجات الأعمال
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3 class="feature-title">ذكاء اصطناعي</h3>
+              <p class="feature-description">
+                استكشف مستقبل التكنولوجيا والذكاء الاصطناعي
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Posts Carousel -->
+    <section class="featured-posts">
+      <div class="container">
+        <h2 class="section-title">المقالات المميزة</h2>
+
+        <div class="featured-carousel">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="slide-image">
+                <img
+                  src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="الذكاء الاصطناعي"
+                />
+              </div>
+              <div class="slide-overlay">
+                <span class="slide-category">تقنية</span>
+                <h2 class="slide-title">مستقبل الذكاء الاصطناعي</h2>
+                <p class="slide-excerpt">
+                  استكشف أحدث التطورات في عالم الذكاء الاصطناعي وتأثيرها على
+                  مستقبل البشرية
+                </p>
+                <a href="article.html?slug=future-of-ai" class="slide-cta">
+                  اقرأ المزيد <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="slide-image">
+                <img
+                  src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="البرمجة"
+                />
+              </div>
+              <div class="slide-overlay">
+                <span class="slide-category">برمجة</span>
+                <h2 class="slide-title">تعلم JavaScript الحديث</h2>
+                <p class="slide-excerpt">
+                  دليل شامل لتعلم أحدث تقنيات JavaScript وأفضل الممارسات في
+                  التطوير
+                </p>
+                <a
+                  href="article.html?slug=learn-javascript-from-scratch"
+                  class="slide-cta"
+                >
+                  ابدأ التعلم <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="slide-image">
+                <img
+                  src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="التصميم"
+                />
+              </div>
+              <div class="slide-overlay">
+                <span class="slide-category">تصميم</span>
+                <h2 class="slide-title">أساسيات UI/UX الحديثة</h2>
+                <p class="slide-excerpt">
+                  تعلم كيفية إنشاء واجهات مستخدم جذابة وتجربة مستخدم استثنائية
+                </p>
+                <a href="article.html?slug=ui-design-basics" class="slide-cta">
+                  اكتشف المزيد <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <div class="slide-image">
+                <img
+                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                  alt="تطوير التطبيقات"
+                />
+              </div>
+              <div class="slide-overlay">
+                <span class="slide-category">تطوير</span>
+                <h2 class="slide-title">تطوير تطبيقات الهاتف المحمول</h2>
+                <p class="slide-excerpt">
+                  دليل شامل لتطوير تطبيقات محمولة احترافية باستخدام أحدث
+                  التقنيات
+                </p>
+                <a
+                  href="article.html?slug=mobile-app-development"
+                  class="slide-cta"
+                >
+                  ابدأ التطوير <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="carousel-btn" id="nextBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+          </div>
+
+          <!-- Carousel Dots -->
+          <div class="carousel-dots" id="carouselDots">
+            <span class="carousel-dot active" data-slide="0"></span>
+            <span class="carousel-dot" data-slide="1"></span>
+            <span class="carousel-dot" data-slide="2"></span>
+            <span class="carousel-dot" data-slide="3"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Posts Section -->
+    <section class="latest-posts" id="latest-posts">
+      <div class="container">
+        <h2 class="section-title">أحدث المقالات</h2>
+        <div class="home-layout">
+          <div class="posts-grid" id="postsGrid">
+            <!-- Posts will be loaded dynamically -->
+          </div>
+
+          <aside class="home-sidebar" id="homeSidebar">
+            <!-- Sidebar content will be loaded dynamically -->
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>🚀 انضم إلى مجتمعنا</h2>
+          <p>
+            احصل على أحدث المقالات والنصائح التقنية مباشرة في بريدك الإلكتروني
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="أدخل بريدك الإلكتروني" required />
+            <button type="submit">
+              <i class="fas fa-paper-plane"></i> اشتراك
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>✨ مدونة عصرية</h3>
+            <p>
+              منصة تفاعلية لمشاركة أحدث المقالات والأفكار في عالم التكنولوجيا
+              والتطوير مع تجربة مستخدم استثنائية
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="posts.html">المقالات</a></li>
+              <li><a href="about.html">حول</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>تابعنا</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 مدونة عصرية. جميع الحقوق محفوظة. صُمم بـ ❤️ للمستقبل
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
+<!-- Commit 4: add hero markup - 2025-10-11 -->
