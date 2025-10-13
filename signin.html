@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول - مدونة عصرية</title>
+    <meta name="description" content="سجل دخولك للوصول إلى حسابك في مدونة عصرية" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header" id="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <h2><i class="fas fa-blog"></i> مدونة عصرية</h2>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">الرئيسية</a>
+          <a href="posts.html" class="nav-link">المقالات</a>
+          <a href="about.html" class="nav-link">حول</a>
+          <a href="contact.html" class="nav-link">اتصل بنا</a>
+          <a href="signin.html" class="nav-link active">تسجيل الدخول</a>
+        </div>
+        <div class="nav-actions">
+          <button class="search-btn" id="searchBtn" aria-label="البحث">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-content">
+            <h1 class="page-title">تسجيل الدخول</h1>
+            <p class="page-subtitle">
+              مرحباً بعودتك! سجل دخولك للوصول إلى حسابك ومتابعة المقالات المفضلة
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="auth-container">
+            <form class="auth-form" id="signinForm" novalidate>
+              <div class="auth-header">
+                <i class="fas fa-user-circle auth-icon"></i>
+                <h2>تسجيل الدخول</h2>
+                <p>أدخل بياناتك للوصول إلى حسابك</p>
+              </div>
+
+              <div class="form-field">
+                <label for="signin-email">البريد الإلكتروني</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input
+                    type="email"
+                    id="signin-email"
+                    name="email"
+                    placeholder="example@email.com"
+                    required
+                    aria-required="true"
+                    autocomplete="email"
+                  />
+                </div>
+                <span class="error-message" id="signin-email-error"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="signin-password">كلمة المرور</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-lock input-icon"></i>
+                  <input
+                    type="password"
+                    id="signin-password"
+                    name="password"
+                    placeholder="••••••••"
+                    required
+                    aria-required="true"
+                    autocomplete="current-password"
+                  />
+                  <button type="button" class="toggle-password" aria-label="إظهار كلمة المرور">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+                <span class="error-message" id="signin-password-error"></span>
+              </div>
+
+              <div class="form-options">
+                <label class="checkbox-wrapper">
+                  <input type="checkbox" id="remember-me" name="remember">
+                  <span>تذكرني</span>
+                </label>
+                <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+              </div>
+
+              <button type="submit" class="auth-btn">
+                <i class="fas fa-sign-in-alt"></i>
+                تسجيل الدخول
+              </button>
+
+              <div class="success-message" id="signin-success"></div>
+
+              <div class="auth-footer">
+                <p>ليس لديك حساب؟ <a href="signup.html">سجل الآن</a></p>
+              </div>
+            </form>
+
+            <div class="auth-benefits">
+              <h3>مميزات التسجيل</h3>
+              <div class="benefits-list">
+                <div class="benefit-item">
+                  <i class="fas fa-bookmark"></i>
+                  <div>
+                    <h4>حفظ المقالات المفضلة</h4>
+                    <p>احفظ المقالات التي تعجبك واقرأها لاحقاً</p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <i class="fas fa-comments"></i>
+                  <div>
+                    <h4>التعليق والمشاركة</h4>
+                    <p>شارك آراءك وناقش الأفكار مع المجتمع</p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <i class="fas fa-bell"></i>
+                  <div>
+                    <h4>إشعارات المقالات الجديدة</h4>
+                    <p>كن أول من يعلم بالمحتوى الجديد</p>
+                  </div>
+                </div>
+                <div class="benefit-item">
+                  <i class="fas fa-user-edit"></i>
+                  <div>
+                    <h4>ملف شخصي مخصص</h4>
+                    <p>أنشئ ملفك الشخصي وتابع اهتماماتك</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><i class="fas fa-blog"></i> مدونة عصرية</h3>
+            <p>
+              منصة تفاعلية لمشاركة أحدث المقالات والأفكار في عالم التكنولوجيا والتطوير مع تجربة مستخدم استثنائية
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="posts.html">المقالات</a></li>
+              <li><a href="about.html">حول</a></li>
+              <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>تابعنا</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 مدونة عصرية. جميع الحقوق محفوظة</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
