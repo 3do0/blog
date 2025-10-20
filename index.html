@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مدونة عصرية - تجربة تفاعلية مذهلة</title>
+    <title>فضاء التقنية - تجربة تفاعلية مذهلة</title>
     <meta
       name="description"
-      content="مدونة عصرية بتصميم تفاعلي مبهر وتجربة مستخدم استثنائية"
+      content="فضاء التقنية بتصميم تفاعلي مبهر وتجربة مستخدم استثنائية"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
@@ -19,7 +24,7 @@
     <header class="header" id="header">
       <nav class="nav">
         <div class="nav-brand">
-          <h2><i class="fas fa-blog"></i> مدونة عصرية</h2>
+          <h2><i class="fas fa-blog"></i> فضاء التقنية</h2>
         </div>
         <div class="nav-links" id="navLinks">
           <a href="index.html" class="nav-link active">الرئيسية</a>
@@ -43,7 +48,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="hero-title">مدونة تقنية حديثة</h1>
+          <h1 class="hero-title">مدونة فضاء التقنية</h1>
           <p class="hero-subtitle">
             اكتشف أحدث التطورات في عالم التكنولوجيا والبرمجة والتصميم مع محتوى
             عربي عالي الجودة
@@ -111,113 +116,91 @@
         <h2 class="section-title">المقالات المميزة</h2>
 
         <div class="featured-carousel">
-          <div class="carousel-track" id="carouselTrack">
-            <!-- Slide 1 -->
-            <div class="carousel-slide">
-              <div class="slide-image">
-                <img
-                  src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="الذكاء الاصطناعي"
-                />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="slide-image">
+                  <img src="./assets/images/Ai.jpg" alt="الذكاء الاصطناعي" />
+                </div>
+                <div class="slide-overlay">
+                  <span class="slide-category">تقنية</span>
+                  <h2 class="slide-title">مستقبل الذكاء الاصطناعي</h2>
+                  <p class="slide-excerpt">
+                    استكشف أحدث التطورات في عالم الذكاء الاصطناعي وتأثيرها على
+                    مستقبل البشرية
+                  </p>
+                  <a href="article.html?slug=future-of-ai" class="slide-cta"
+                    >اقرأ المزيد <i class="fas fa-arrow-left"></i
+                  ></a>
+                </div>
               </div>
-              <div class="slide-overlay">
-                <span class="slide-category">تقنية</span>
-                <h2 class="slide-title">مستقبل الذكاء الاصطناعي</h2>
-                <p class="slide-excerpt">
-                  استكشف أحدث التطورات في عالم الذكاء الاصطناعي وتأثيرها على
-                  مستقبل البشرية
-                </p>
-                <a href="article.html?slug=future-of-ai" class="slide-cta">
-                  اقرأ المزيد <i class="fas fa-arrow-left"></i>
-                </a>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="slide-image">
+                  <img
+                    src="./assets/images/mobile-app-development.jpg"
+                    alt="تطوير التطبيقات"
+                  />
+                </div>
+                <div class="slide-overlay">
+                  <span class="slide-category">تطوير</span>
+                  <h2 class="slide-title">تطوير تطبيقات الهاتف المحمول</h2>
+                  <p class="slide-excerpt">
+                    دليل شامل لتطوير تطبيقات محمولة احترافية باستخدام أحدث
+                    التقنيات
+                  </p>
+                  <a
+                    href="article.html?slug=mobile-app-development"
+                    class="slide-cta"
+                    >ابدأ التطوير <i class="fas fa-arrow-left"></i
+                  ></a>
+                </div>
               </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-              <div class="slide-image">
-                <img
-                  src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="البرمجة"
-                />
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="slide-image">
+                  <img
+                    src="./assets/images/digital-marketing.jpeg"
+                    alt="تسويق رقمي"
+                  />
+                </div>
+                <div class="slide-overlay">
+                  <span class="slide-category">تسويق</span>
+                  <h2 class="slide-title">استراتيجيات التسويق الرقمي</h2>
+                  <p class="slide-excerpt">
+                    استراتيجيات عملية لزيادة الوصول والمبيعات عبر القنوات
+                    الرقمية
+                  </p>
+                  <a
+                    href="article.html?slug=digital-marketing-strategies"
+                    class="slide-cta"
+                    >اقرأ المزيد <i class="fas fa-arrow-left"></i
+                  ></a>
+                </div>
               </div>
-              <div class="slide-overlay">
-                <span class="slide-category">برمجة</span>
-                <h2 class="slide-title">تعلم JavaScript الحديث</h2>
-                <p class="slide-excerpt">
-                  دليل شامل لتعلم أحدث تقنيات JavaScript وأفضل الممارسات في
-                  التطوير
-                </p>
-                <a
-                  href="article.html?slug=learn-javascript-from-scratch"
-                  class="slide-cta"
-                >
-                  ابدأ التعلم <i class="fas fa-arrow-left"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-              <div class="slide-image">
-                <img
-                  src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="التصميم"
-                />
-              </div>
-              <div class="slide-overlay">
-                <span class="slide-category">تصميم</span>
-                <h2 class="slide-title">أساسيات UI/UX الحديثة</h2>
-                <p class="slide-excerpt">
-                  تعلم كيفية إنشاء واجهات مستخدم جذابة وتجربة مستخدم استثنائية
-                </p>
-                <a href="article.html?slug=ui-design-basics" class="slide-cta">
-                  اكتشف المزيد <i class="fas fa-arrow-left"></i>
-                </a>
-              </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="carousel-slide">
-              <div class="slide-image">
-                <img
-                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="تطوير التطبيقات"
-                />
-              </div>
-              <div class="slide-overlay">
-                <span class="slide-category">تطوير</span>
-                <h2 class="slide-title">تطوير تطبيقات الهاتف المحمول</h2>
-                <p class="slide-excerpt">
-                  دليل شامل لتطوير تطبيقات محمولة احترافية باستخدام أحدث
-                  التقنيات
-                </p>
-                <a
-                  href="article.html?slug=mobile-app-development"
-                  class="slide-cta"
-                >
-                  ابدأ التطوير <i class="fas fa-arrow-left"></i>
-                </a>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="slide-image">
+                  <img src="./assets/images/ui-design.webp" alt="التصميم" />
+                </div>
+                <div class="slide-overlay">
+                  <span class="slide-category">تصميم</span>
+                  <h2 class="slide-title">أساسيات UI/UX الحديثة</h2>
+                  <p class="slide-excerpt">
+                    تعلم كيفية إنشاء واجهات مستخدم جذابة وتجربة مستخدم استثنائية
+                  </p>
+                  <a href="article.html?slug=ui-design-basics" class="slide-cta"
+                    >اكتشف المزيد <i class="fas fa-arrow-left"></i
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <div class="carousel-controls">
-            <button class="carousel-btn" id="prevBtn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-            <button class="carousel-btn" id="nextBtn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-          </div>
-
-          <!-- Carousel Dots -->
-          <div class="carousel-dots" id="carouselDots">
-            <span class="carousel-dot active" data-slide="0"></span>
-            <span class="carousel-dot" data-slide="1"></span>
-            <span class="carousel-dot" data-slide="2"></span>
-            <span class="carousel-dot" data-slide="3"></span>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
@@ -262,7 +245,7 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3>✨ مدونة عصرية</h3>
+            <h3>✨ فضاء التقنية..</h3>
             <p>
               منصة تفاعلية لمشاركة أحدث المقالات والأفكار في عالم التكنولوجيا
               والتطوير مع تجربة مستخدم استثنائية
@@ -289,13 +272,33 @@
         </div>
         <div class="footer-bottom">
           <p>
-            &copy; 2024 مدونة عصرية. جميع الحقوق محفوظة. صُمم بـ ❤️ للمستقبل
+            &copy; 2025 فضاء التقنية جميع الحقوق محفوظة. صُمم بـ ❤️ للمستقبل
           </p>
         </div>
       </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        rtl: true,
+      });
+    </script>
   </body>
 </html>
 

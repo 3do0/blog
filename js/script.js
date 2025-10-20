@@ -7,23 +7,21 @@ const DB = {
       excerpt:
         "استكشاف أحدث التطورات في مجال الذكاء الاصطناعي وتأثيرها على حياتنا اليومية والمستقبل القريب.",
       content: `<p class="lead">يشهد عالم الذكاء الاصطناعي تطورات مذهلة ومتسارعة، حيث تتنوع تطبيقاته من الطب إلى التعليم، ومن النقل إلى الترفيه.</p><h2>التطورات الحديثة في الذكاء الاصطناعي</h2><p>شهدت السنوات الماضية قفزات نوعية في التعلم العميق ومعالجة اللغات الطبيعية.</p><blockquote>الذكاء الاصطناعي ثورة ستغير طريقة تفاعلنا مع العالم.</blockquote><h2>التطبيقات العملية</h2><ul><li><strong>الطب:</strong> تشخيص الأمراض والعلاجات الشخصية</li><li><strong>التعليم:</strong> أنظمة تعلم تكيفية</li><li><strong>النقل:</strong> سيارات ذاتية القيادة</li></ul>`,
-      image: "./assets/images/000.webp",
+      image: "./assets/images/Ai.jpg",
       category: "تقنية",
       tags: ["الذكاء الاصطناعي", "تقنية", "مستقبل"],
       published_at: "2024-12-15",
     },
     {
       id: 2,
-      title: "تعلم JavaScript من الصفر",
-      slug: "learn-javascript-from-scratch",
-      excerpt:
-        "دليل شامل لتعلم لغة البرمجة الأكثر شعبية مع أمثلة عملية وتطبيقات حقيقية.",
-      content: `<p class="lead">ابدأ رحلتك مع JavaScript بأساسيات قوية وأمثلة عملية.</p><h2>المتغيرات والدوال</h2><p>فهم الأساسيات أولاً يبني قاعدة قوية.</p><h2>التعامل مع DOM</h2><p>كيف تتفاعل مع عناصر الصفحة ديناميكياً.</p>`,
-      image:
-        "https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      category: "برمجة",
-      tags: ["JavaScript", "ويب", "برمجة"],
-      published_at: "2024-12-05",
+      title: "استراتيجيات التسويق الرقمي",
+      slug: "digital-marketing-strategies",
+      excerpt: "أحدث الطرق للوصول إلى جمهورك المستهدف وتحقيق نتائج ملموسة.",
+      content: `<p class="lead">التسويق المبني على البيانات يحقق نتائج قابلة للقياس.</p><h2>القنوات الفعالة</h2><p>محركات البحث، الشبكات الاجتماعية، والبريد الإلكتروني.</p>`,
+      image: "./assets/images/digital-marketing.jpeg",
+      category: "تسويق",
+      tags: ["تسويق", "SEO", "رقمي"],
+      published_at: "2024-12-01",
     },
     {
       id: 3,
@@ -32,23 +30,22 @@ const DB = {
       excerpt:
         "كيفية إنشاء تصاميم جذابة وسهلة الاستخدام مع أحدث اتجاهات التصميم.",
       content: `<p class="lead">تعرف على مبادئ التباين والتدرج البصري والمسافات.</p><h2>الطباعة والألوان</h2><p>اختيار الخطوط والألوان يؤثر مباشرة على تجربة المستخدم.</p>`,
-      image:
-        "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: "./assets/images/ui-design.webp",
       category: "تصميم",
       tags: ["UI", "UX", "تصميم"],
       published_at: "2024-12-03",
     },
     {
       id: 4,
-      title: "استراتيجيات التسويق الرقمي",
-      slug: "digital-marketing-strategies",
-      excerpt: "أحدث الطرق للوصول إلى جمهورك المستهدف وتحقيق نتائج ملموسة.",
-      content: `<p class="lead">التسويق المبني على البيانات يحقق نتائج قابلة للقياس.</p><h2>القنوات الفعالة</h2><p>محركات البحث، الشبكات الاجتماعية، والبريد الإلكتروني.</p>`,
-      image:
-        "https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      category: "تسويق",
-      tags: ["تسويق", "SEO", "رقمي"],
-      published_at: "2024-12-01",
+      title: "أمن المعلومات في العصر الرقمي",
+      slug: "cybersecurity-digital-age",
+      excerpt:
+        "كيفية حماية بياناتك الشخصية والمؤسسية من التهديدات السيبرانية المتزايدة.",
+      content: `<p class="lead">الأمن السيبراني أصبح ضرورة حتمية في عالمنا الرقمي المتصل.</p><h2>أنواع التهديدات</h2><p>من الفيروسات إلى الهجمات المتقدمة المستمرة.</p>`,
+      image: "./assets/images/cybersecurity.jpeg",
+      category: "أمان",
+      tags: ["أمن المعلومات", "حماية", "خصوصية"],
+      published_at: "2024-11-25",
     },
     {
       id: 5,
@@ -57,24 +54,22 @@ const DB = {
       excerpt:
         "دليل شامل لتطوير تطبيقات الهاتف المحمول باستخدام أحدث التقنيات والأدوات.",
       content: `<p class="lead">تعلم كيفية بناء تطبيقات محمولة احترافية تلبي احتياجات المستخدمين.</p><h2>اختيار المنصة المناسبة</h2><p>مقارنة بين التطوير الأصلي والهجين والويب.</p>`,
-      image:
-        "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1200",
+      image: "./assets/images/mobile-app-development.jpg",
       category: "تطوير",
       tags: ["تطبيقات", "موبايل", "تطوير"],
       published_at: "2024-11-28",
     },
     {
       id: 6,
-      title: "أمن المعلومات في العصر الرقمي",
-      slug: "cybersecurity-digital-age",
+      title: "تعلم JavaScript من الصفر",
+      slug: "learn-javascript-from-scratch",
       excerpt:
-        "كيفية حماية بياناتك الشخصية والمؤسسية من التهديدات السيبرانية المتزايدة.",
-      content: `<p class="lead">الأمن السيبراني أصبح ضرورة حتمية في عالمنا الرقمي المتصل.</p><h2>أنواع التهديدات</h2><p>من الفيروسات إلى الهجمات المتقدمة المستمرة.</p>`,
-      image:
-        "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1200",
-      category: "أمان",
-      tags: ["أمن المعلومات", "حماية", "خصوصية"],
-      published_at: "2024-11-25",
+        "دليل شامل لتعلم لغة البرمجة الأكثر شعبية مع أمثلة عملية وتطبيقات حقيقية.",
+      content: `<p class="lead">ابدأ رحلتك مع JavaScript بأساسيات قوية وأمثلة عملية.</p><h2>المتغيرات والدوال</h2><p>فهم الأساسيات أولاً يبني قاعدة قوية.</p><h2>التعامل مع DOM</h2><p>كيف تتفاعل مع عناصر الصفحة ديناميكياً.</p>`,
+      image: "./assets/images/javascript-learning.jpeg",
+      category: "برمجة",
+      tags: ["JavaScript", "ويب", "برمجة"],
+      published_at: "2024-12-05",
     },
   ],
 };
@@ -107,14 +102,70 @@ function initNav() {
 }
 
 function initCarousel() {
-  const track = document.querySelector(".carousel-track");
-  if (!track || track.children.length <= 1) return;
+  // Initialize Swiper: build slides from DB.posts and mount Swiper
+  const container = document.getElementById("featuredSwiper");
+  if (!container || typeof Swiper === "undefined") return;
 
-  let index = 0;
-  setInterval(() => {
-    index = (index + 1) % track.children.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }, 4000);
+  const wrapper = container.querySelector(".swiper-wrapper");
+  if (!wrapper) return;
+
+  // Use first 4 posts as featured (or fewer if not available)
+  // sort by numeric id (ascending) without mutating the original DB.posts
+  const featured = DB.posts
+    .slice()
+    .sort((a, b) => a.id - b.id)
+    .slice(0, 4);
+  wrapper.innerHTML = featured
+    .map(
+      (p) => `
+      <div class="swiper-slide">
+        <div class="slide-image"><img src="${p.image}" alt="${p.title}"></div>
+        <div class="slide-overlay">
+          <span class="slide-category">${p.category}</span>
+          <h2 class="slide-title">${p.title}</h2>
+          <p class="slide-excerpt">${p.excerpt}</p>
+          <a href="article.html?slug=${p.slug}" class="slide-cta">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+    `
+    )
+    .join("");
+
+  // add pagination/navigation elements
+  if (!container.querySelector(".swiper-pagination")) {
+    const pag = document.createElement("div");
+    pag.className = "swiper-pagination";
+    container.appendChild(pag);
+  }
+  if (!container.querySelector(".swiper-button-next")) {
+    const next = document.createElement("div");
+    next.className = "swiper-button-next carousel-btn";
+    next.innerHTML = '<i class="fas fa-chevron-left"></i>';
+    container.appendChild(next);
+  }
+  if (!container.querySelector(".swiper-button-prev")) {
+    const prev = document.createElement("div");
+    prev.className = "swiper-button-prev carousel-btn";
+    prev.innerHTML = '<i class="fas fa-chevron-right"></i>';
+    container.appendChild(prev);
+  }
+
+  // init swiper
+  try {
+    // eslint-disable-next-line no-unused-vars
+    const swiper = new Swiper(container, {
+      loop: true,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      effect: "slide",
+    });
+  } catch (e) {
+    // silent
+  }
 }
 
 function initPage() {
@@ -146,9 +197,8 @@ function renderHome() {
   const sidebar = document.getElementById("homeSidebar");
   if (!grid) return;
 
-  const posts = DB.posts.sort(
-    (a, b) => new Date(b.published_at) - new Date(a.published_at)
-  );
+  // do not mutate DB.posts; sort a shallow copy by numeric id (ascending)
+  const posts = DB.posts.slice().sort((a, b) => a.id - b.id);
 
   grid.innerHTML = posts
     .map(
@@ -164,7 +214,7 @@ function renderHome() {
         <h3>${p.title}</h3>
         <p>${p.excerpt}</p>
         <div class="post-footer">
-          <span><i class="fas fa-user"></i> مدونة عصرية</span>
+          <span><i class="fas fa-user"></i> فضاء التقنية..</span>
           <span><i class="fas fa-calendar"></i> ${formatDate(
             p.published_at
           )}</span>
@@ -237,7 +287,7 @@ function renderArticle() {
   const slug = new URLSearchParams(location.search).get("slug");
   const post = DB.posts.find((p) => p.slug === slug) || DB.posts[0];
 
-  document.title = `${post.title} - مدونة عصرية`;
+  document.title = `${post.title} - فضاء التقنية..`;
 
   const els = {
     ".article-category": post.category,
@@ -266,9 +316,10 @@ function renderArticle() {
 
   const sidebar = document.querySelector(".article-sidebar");
   if (sidebar) {
+    // show latest by id order (ascending) from a shallow copy
     const latest = DB.posts
       .slice()
-      .sort((a, b) => new Date(b.published_at) - new Date(a.published_at))
+      .sort((a, b) => a.id - b.id)
       .slice(0, 5);
     sidebar.innerHTML = `
       <div class="sidebar-widget">

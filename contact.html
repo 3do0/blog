@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اتصل بنا - مدونة عصرية</title>
+    <title>اتصل بنا - فضاء التقنية</title>
     <meta name="description" content="تواصل معنا" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header" id="header">
       <nav class="nav">
         <div class="nav-brand">
-          <h2><i class="fas fa-blog"></i> مدونة عصرية</h2>
+          <h2><i class="fas fa-blog"></i> فضاء التقنية</h2>
         </div>
         <div class="nav-links" id="navLinks">
           <a href="index.html" class="nav-link">الرئيسية</a>
@@ -37,7 +40,8 @@
         <div class="page-hero-content">
           <h1 class="page-title">تواصل معنا</h1>
           <p class="page-subtitle">
-            نسعد بتواصلكم واستقبال اقتراحاتكم وآرائكم لتطوير المحتوى وتحسين تجربة المستخدم
+            نسعد بتواصلكم واستقبال اقتراحاتكم وآرائكم لتطوير المحتوى وتحسين
+            تجربة المستخدم
           </p>
         </div>
       </div>
@@ -47,28 +51,80 @@
       <div class="container">
         <div class="home-layout">
           <div class="posts-grid">
-            <form class="comment-form" style="grid-column: 1 / -1; max-width: none;" id="contactForm" novalidate>
+            <form
+              class="comment-form"
+              style="grid-column: 1 / -1; max-width: none"
+              id="contactForm"
+              novalidate
+            >
               <h3><i class="fas fa-envelope"></i> أرسل رسالة</h3>
               <div class="form-group">
-                <div style="flex: 1;">
-                  <label for="contact-name" class="visually-hidden">الاسم</label>
-                  <input type="text" id="contact-name" name="name" placeholder="اسمك الكريم" required aria-required="true" />
+                <div style="flex: 1">
+                  <label for="contact-name" class="visually-hidden"
+                    >الاسم</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="اسمك الكريم"
+                    required
+                    aria-required="true"
+                  />
                   <span class="error-message" id="name-error"></span>
                 </div>
-                <div style="flex: 1;">
-                  <label for="contact-email" class="visually-hidden">البريد الإلكتروني</label>
-                  <input type="email" id="contact-email" name="email" placeholder="بريدك الإلكتروني" required aria-required="true" />
+                <div style="flex: 1">
+                  <label for="contact-email" class="visually-hidden"
+                    >البريد الإلكتروني</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    placeholder="بريدك الإلكتروني"
+                    required
+                    aria-required="true"
+                  />
                   <span class="error-message" id="email-error"></span>
                 </div>
               </div>
               <div>
-                <label for="contact-subject" class="visually-hidden">الموضوع</label>
-                <input type="text" id="contact-subject" name="subject" placeholder="موضوع الرسالة" required style="width: 100%; padding: 1rem; background: var(--bg-glass); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; color: var(--text-primary); font-size: 1rem; margin-bottom: 1.5rem; transition: var(--transition);" aria-required="true" />
+                <label for="contact-subject" class="visually-hidden"
+                  >الموضوع</label
+                >
+                <input
+                  type="text"
+                  id="contact-subject"
+                  name="subject"
+                  placeholder="موضوع الرسالة"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 1rem;
+                    background: var(--bg-glass);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 12px;
+                    color: var(--text-primary);
+                    font-size: 1rem;
+                    margin-bottom: 1.5rem;
+                    transition: var(--transition);
+                  "
+                  aria-required="true"
+                />
                 <span class="error-message" id="subject-error"></span>
               </div>
               <div>
-                <label for="contact-message" class="visually-hidden">الرسالة</label>
-                <textarea id="contact-message" name="message" placeholder="محتوى رسالتك..." rows="6" required aria-required="true"></textarea>
+                <label for="contact-message" class="visually-hidden"
+                  >الرسالة</label
+                >
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  placeholder="محتوى رسالتك..."
+                  rows="6"
+                  required
+                  aria-required="true"
+                ></textarea>
                 <span class="error-message" id="message-error"></span>
               </div>
               <button type="submit">
@@ -77,7 +133,7 @@
               <div class="success-message" id="contact-success"></div>
             </form>
           </div>
-          
+
           <aside class="home-sidebar">
             <div class="sidebar-widget">
               <h3><i class="fas fa-info-circle"></i> معلومات التواصل</h3>
@@ -102,7 +158,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="sidebar-widget">
               <h3><i class="fas fa-question-circle"></i> أسئلة شائعة</h3>
               <div class="tags">
@@ -121,9 +177,10 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-section">
-            <h3><i class="fas fa-blog"></i> مدونة عصرية</h3>
+            <h3><i class="fas fa-blog"></i> فضاء التقنية..</h3>
             <p>
-              منصة تفاعلية لمشاركة أحدث المقالات والأفكار في عالم التكنولوجيا والتطوير مع تجربة مستخدم استثنائية
+              منصة تفاعلية لمشاركة أحدث المقالات والأفكار في عالم التكنولوجيا
+              والتطوير مع تجربة مستخدم استثنائية
             </p>
           </div>
           <div class="footer-section">
@@ -146,7 +203,9 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 مدونة عصرية. جميع الحقوق محفوظة. صُمم بـ ❤️ للمستقبل</p>
+          <p>
+            &copy; 2025 فضاء التقنية جميع الحقوق محفوظة. صُمم بـ ❤️ للمستقبل
+          </p>
         </div>
       </div>
     </footer>
