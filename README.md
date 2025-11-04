@@ -22,3 +22,10 @@
 | اتصل بنا     | `contact.html` | نموذج تواصل                                    |
 | تسجيل الدخول | `signin.html`  | نموذج تسجيل الدخول                             |
 | إنشاء حساب   | `signup.html`  | نموذج إنشاء حساب مع مؤشر قوة كلمة المرور       |
+
+## التقنيات
+
+- **HTML5** مع عناصر دلالية (header, nav, article, section)
+- **CSS3**: متغيرات CSS للألوان، Flexbox و Grid للتخطيط، وتأثيرات Glassmorphism
+- **JavaScript (ES6+)** بدون مكتبات: العرض والتنقل والتحقق من النماذج في `js/script.js`
+- خطوط عربية محلية: Tajawal و IBM Plex Sans Arabic من مجلد `assets/fonts`
