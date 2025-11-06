@@ -29,3 +29,22 @@
 - **CSS3**: متغيرات CSS للألوان، Flexbox و Grid للتخطيط، وتأثيرات Glassmorphism
 - **JavaScript (ES6+)** بدون مكتبات: العرض والتنقل والتحقق من النماذج في `js/script.js`
 - خطوط عربية محلية: Tajawal و IBM Plex Sans Arabic من مجلد `assets/fonts`
+
+## بنية المشروع
+
+```
+├── index.html          # الصفحة الرئيسية
+├── posts.html          # أرشيف المقالات
+├── article.html        # قالب المقال
+├── about.html
+├── contact.html
+├── signin.html
+├── signup.html
+├── css/
+│   └── styles.css      # كل الأنماط في ملف واحد
+├── js/
+│   └── script.js       # البيانات (DB.posts) + منطق الواجهة
+└── assets/
+    ├── fonts/          # الخطوط العربية
+    └── images/         # صور المقالات
+```
