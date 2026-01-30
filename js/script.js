@@ -88,7 +88,8 @@ function initNav() {
 
   if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+      const open = navLinks.classList.toggle("active");
+      menuBtn.setAttribute("aria-expanded", String(open));
       const icon = menuBtn.querySelector("i");
       icon.classList.toggle("fa-times");
     });
