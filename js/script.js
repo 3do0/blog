@@ -176,7 +176,7 @@ function initCarousel() {
 function initPage() {
   const path = location.pathname;
   if (path.includes("article.html")) renderArticle();
-  else if (path.includes("index.html") || path === "/") renderHome();
+  else if (path.includes("index.html") || path.endsWith("/")) renderHome();
   else if (path.includes("posts.html")) renderHome();
   if (path.includes("signin.html")) initForm("signin");
   if (path.includes("signup.html")) initForm("signup");
