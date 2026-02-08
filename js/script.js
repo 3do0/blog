@@ -96,9 +96,13 @@ function initNav() {
   }
 
   if (header) {
-    window.addEventListener("scroll", () => {
-      header.classList.toggle("scrolled", window.scrollY > 80);
-    });
+    window.addEventListener(
+      "scroll",
+      () => {
+        header.classList.toggle("scrolled", window.scrollY > 80);
+      },
+      { passive: true }
+    );
   }
 }
 
@@ -186,11 +190,15 @@ function initScrollTop() {
   btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
   document.body.appendChild(btn);
 
-  window.addEventListener("scroll", () => {
-    const show = window.scrollY > 500;
-    btn.style.opacity = show ? "1" : "0";
-    btn.style.visibility = show ? "visible" : "hidden";
-  });
+  window.addEventListener(
+    "scroll",
+    () => {
+      const show = window.scrollY > 500;
+      btn.style.opacity = show ? "1" : "0";
+      btn.style.visibility = show ? "visible" : "hidden";
+    },
+    { passive: true }
+  );
 }
 
 function renderHome() {
