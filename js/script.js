@@ -216,7 +216,7 @@ function renderHome() {
       p.slug
     }'">
       <div class="post-image">
-        <img src="${p.image}" alt="${p.title}">
+        <img src="${p.image}" alt="${p.title}" loading="lazy">
         <span class="post-category">${p.category}</span>
       </div>
       <div class="post-content">
@@ -261,7 +261,7 @@ function renderHome() {
             <article class="related-post" onclick="location.href='article.html?slug=${
               p.slug
             }'">
-              <img src="${p.image}" alt="${p.title}">
+              <img src="${p.image}" alt="${p.title}" loading="lazy">
               <div class="related-content">
                 <h4>${p.title}</h4>
                 <span class="related-date">${formatDate(p.published_at)}</span>
@@ -340,7 +340,7 @@ function renderArticle() {
             <article class="related-post" onclick="location.href='article.html?slug=${
               p.slug
             }'">
-              <img src="${p.image}" alt="${p.title}">
+              <img src="${p.image}" alt="${p.title}" loading="lazy">
               <div class="related-content">
                 <h4>${p.title}</h4>
                 <span class="related-date">${formatDate(p.published_at)}</span>
