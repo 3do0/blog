@@ -314,7 +314,10 @@ function renderArticle() {
   if (textEl) textEl.innerHTML = post.content;
 
   const img = document.querySelector(".article-image img");
-  if (img) img.src = post.image;
+  if (img) {
+    img.src = post.image;
+    img.alt = post.title;
+  }
 
   const tags = document.querySelector(".article-tags .tags");
   if (tags) {
